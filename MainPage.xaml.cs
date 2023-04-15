@@ -51,7 +51,16 @@ namespace Amanda
 
 		private void WebViewMain_ScriptNotify(object sender, NotifyEventArgs e)
 		{
-			
+			string[] valueArray = e.Value.Split(':');
+
+			switch (valueArray[0])
+			{
+				case "1":
+					ShowNotification.Invoke(valueArray[1], (NotificationTypeEnum)int.Parse(valueArray[2]));
+					break;
+				default:
+					break;
+			}
 		}
 
 		private void WebViewMain_Loaded(object sender, RoutedEventArgs e)

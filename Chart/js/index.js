@@ -7,6 +7,9 @@ const handleButtonPlayClicked = () => {
 const handleButtonNextClicked = () => {
     window.external.notify('Button Next Clicked');
 }
+const handleButtonAmshyClicked = () => {
+    window.external.notify('1:I Love You, Amshy 💖:0');
+}
 
 window.showNotification = (message, type = 'info', timeLimit = 3000) => {
     const alertContainer = document.getElementById('alertContainer');

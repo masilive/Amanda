@@ -10,13 +10,18 @@
     <link rel="stylesheet" href="../css/bootstrap-icons.css" />
 </head>
 <body>
+    <div class="position-absolute top-0 start-50 translate-middle-x p-1 rounded-bottom-2 onlyOnHover neon-glow app-theme px-5 py-2 w-25">
+        <div class="d-grid">
+            <button type="button" class="btn btn-outline-primary btn-block rounded-bottom-2 app-theme" onclick="handleButtonAmshyClicked()"><h2>Amshy</h2></button>
+        </div>
+    </div>
     <canvas id="chartContainer" class="app-theme" style="width:100%;height:100%;z-index:1;"></canvas>
     <div class="position-absolute bottom-0 start-50 translate-middle-x p-1 rounded-top onlyOnHover neon-glow app-theme">
         <button type="button" class="btn btn-outline-primary app-theme" onclick="handleButtonPrevClicked()">Prev</button>
         <button type="button" class="btn btn-outline-primary app-theme" onclick="handleButtonPlayClicked()">Play</button>
         <button type="button" class="btn btn-outline-primary app-theme" onclick="handleButtonNextClicked()">Next</button>
     </div>
-    <div id="alertContainer" class="position-absolute bottom-0 end-0 px-1">        
+    <div id="alertContainer" class="position-absolute bottom-0 end-0 px-1">
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="Success-fill" fill="currentColor" viewBox="0 0 16 16">
